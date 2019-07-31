@@ -1,5 +1,5 @@
 *npy
-data/example_data/*
+data/*
 sup-*
 
 *pyc
