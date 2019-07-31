@@ -27,8 +27,8 @@ def to_numpy(x):
     '''
     x_numpy = x.cpu() if x.is_cuda else x
     try:
-        x_numpy = x.numpy()
+        x_numpy = x_numpy.numpy()
     except:
-        x_numpy = x.detach().numpy()
+        x_numpy = x_numpy.detach().numpy()
     return x_numpy
 
