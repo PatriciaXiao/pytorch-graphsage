@@ -2,11 +2,6 @@
 
 # run.sh
 mkdir data
-mkdir data/reddit
-mkdir data/cora
-mkdir data/pokec
-mkdir data/example_data
-
 # --
 # Small
 
