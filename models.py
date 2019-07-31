@@ -99,7 +99,7 @@ class GSSupervised(nn.Module):
         preds = self(ids, feats, train=True)
         loss = loss_fn(preds, targets.squeeze())
         loss.backward()
-        torch.nn.utils.clip_grad_norm(self.parameters(), 5)
+        torch.nn.utils.clip_grad_norm_(self.parameters(), 5)
         self.optimizer.step()
         return preds
 

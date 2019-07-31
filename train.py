@@ -150,7 +150,7 @@ if __name__ == "__main__":
             print(targets)
             print(preds)
             print(targets.cpu().numpy())
-            print(preds.cpu().numpy())
+            print(preds.detach().cpu().numpy())
             exit(0)
             
             train_metric = problem.metric_fn(to_numpy(targets), to_numpy(preds))
