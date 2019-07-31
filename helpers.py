@@ -19,7 +19,7 @@ def set_seeds(seed=0):
 
 
 def to_numpy(x):
-	'''
+    '''
     if isinstance(x, Variable):
         return to_numpy(x.data)
     
@@ -27,8 +27,8 @@ def to_numpy(x):
     '''
     x_numpy = x.cpu() if x.is_cuda else x
     try:
-    	x_numpy = x.numpy()
+        x_numpy = x.numpy()
     except:
-    	x_numpy = preds.detach().numpy()
+        x_numpy = preds.detach().numpy()
     return x_numpy
 
