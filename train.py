@@ -146,6 +146,10 @@ if __name__ == "__main__":
                 targets=targets,
                 loss_fn=problem.loss_fn,
             )
+
+            print(targets)
+            print(preds)
+            exit(0)
             
             train_metric = problem.metric_fn(to_numpy(targets), to_numpy(preds))
             print(json.dumps({
