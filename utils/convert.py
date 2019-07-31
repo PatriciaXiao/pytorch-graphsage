@@ -22,7 +22,7 @@ from scipy.sparse import csr_matrix
 from networkx.readwrite import json_graph
 from sklearn.preprocessing import StandardScaler
 
-#assert int(nx.__version__.split('.')[0]) < 2, "networkx major version > 1"
+assert int(nx.__version__.split('.')[0]) < 2, "networkx major version > 1"
 
 # --
 # Helpers
@@ -45,7 +45,7 @@ def validate_problem(problem):
         assert problem['feats'].shape[0] == problem['targets'].shape[0], "problem['feats'].shape[0] != (problem['targets'].shape[0]"
         assert problem['feats'].shape[0] == problem['folds'].shape[0], "problem['feats'].shape[0] != (problem['folds'].shape[0]"
         
-        if not problem['sparse']:
+        if 'sparse' in problem and not problem['sparse']:
             assert problem['adj'].shape[0] == problem['feats'].shape[0], "problem['adj'].shape[0] != problem['feats'].shape[0]"
     
     assert problem['adj'].shape[0] == problem['train_adj'].shape[0], "problem['adj'].shape[0] != problem['train_adj'].shape[0]"
