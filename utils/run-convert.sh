@@ -1,14 +1,13 @@
 #!/bin/bash
 
 # example_data (ppi)
-python convert.py \
-    --inpath ../data/example_data/ \
-    --task multilabel_classification
+# python convert.py \
+#     --inpath ../data/example_data/ \
+#     --task multilabel_classification
 
 # reddit
-python convert.py \
-    --inpath ../data/reddit/ \
-    --task classification
+# python convert.py \
+#     --inpath ../data/reddit/ \
+#     --task classification
 
-python convert.py --inpath ../data/reddit/ --task classification
-python convert.py --inpath ../data/ppi/ --task multilabel_classification
+python convert.py --inpath ../data/example_data/ --task multilabel_classification
