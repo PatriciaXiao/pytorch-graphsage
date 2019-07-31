@@ -10,7 +10,8 @@ from __future__ import print_function
 import os
 import sys
 import h5py
-import cPickle
+#import cPickle
+#import pickle
 import numpy as np
 from scipy import sparse
 from sklearn import metrics

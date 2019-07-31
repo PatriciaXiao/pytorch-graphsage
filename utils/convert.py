@@ -12,7 +12,7 @@ import os
 import sys
 import h5py
 import shutil
-import cPickle
+#import cPickle
 import argparse
 import numpy as np
 import ujson as json
