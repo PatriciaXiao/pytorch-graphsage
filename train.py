@@ -147,11 +147,11 @@ if __name__ == "__main__":
                 loss_fn=problem.loss_fn,
             )
 
-            print(targets)
-            print(preds)
-            print(targets.cpu().numpy())
-            print(preds.detach().cpu().numpy())
-            exit(0)
+            #print(targets)
+            #print(preds)
+            #print(targets.cpu().numpy())
+            #print(preds.detach().cpu().numpy())
+            #exit(0)
             
             train_metric = problem.metric_fn(to_numpy(targets), to_numpy(preds))
             print(json.dumps({
