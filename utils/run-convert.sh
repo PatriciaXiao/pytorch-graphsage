@@ -9,3 +9,6 @@ python convert.py \
 python convert.py \
     --inpath ../data/reddit/ \
     --task classification
+
+python convert.py --inpath ../data/reddit/ --task classification
+python convert.py --inpath ../data/ppi/ --task multilabel_classification

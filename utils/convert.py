@@ -22,7 +22,7 @@ from scipy.sparse import csr_matrix
 from networkx.readwrite import json_graph
 from sklearn.preprocessing import StandardScaler
 
-assert int(nx.__version__.split('.')[0]) < 2, "networkx major version > 1"
+#assert int(nx.__version__.split('.')[0]) < 2, "networkx major version > 1"
 
 # --
 # Helpers
