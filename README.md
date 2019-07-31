@@ -33,3 +33,4 @@ then run:
 python train.py --problem-path ./data/example_data/problem.h5 --aggregator-class mean --epochs 2
 ```
 
+And now I fixed the bugs so as it supports the latest pytorch.
