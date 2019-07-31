@@ -29,6 +29,6 @@ def to_numpy(x):
     try:
         x_numpy = x.numpy()
     except:
-        x_numpy = preds.detach().numpy()
+        x_numpy = x.detach().numpy()
     return x_numpy
 
