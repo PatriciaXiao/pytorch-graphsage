@@ -1,5 +1,6 @@
-*npy
-data/*
+#*npy
+#data/*
 sup-*
 
 *pyc
+.DS_Store
